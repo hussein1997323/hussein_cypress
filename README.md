@@ -1,8 +1,13 @@
 # hussein_cypress
+as versoins:
+VS code 1.85.2
+node.js v18.16.1
+
 As dependencia usadas 
 
 -npm init -y
 -pnpm install cypress --save-dev 
+pnpm install eslint --save-dev 
 
 
 Inicie o Cypress:
