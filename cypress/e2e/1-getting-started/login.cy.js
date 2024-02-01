@@ -11,7 +11,14 @@ beforeEach(() =>{
         cy.get('.cl-formFieldErrorText').should('be.visible')
        })
 
-    it.only('segue para segunda etapa cadastro existe', ()=>{
+       it('exibe menssagerm sem prencher os campo obrigatorios' , () =>{
+        cy.get('.gap-3 > .flex > .inline-flex').click()
+        cy.get('#identifier-field')
+        cy.get('.cl-formButtonPrimary').click()
+        cy.get('.cl-formFieldErrorText')
+        
+    })
+    it('segue para segunda etapa cadastro existe', ()=>{
         cy.get('.gap-3 > .flex > .inline-flex').click()
         cy.get('#identifier-field').type('husseinothman660@gmail.com')
         .should('have.value', 'husseinothman660@gmail.com')
@@ -24,12 +31,7 @@ beforeEach(() =>{
 
 
 
-    it('exibe menssagerm sem prencher os campo obrigatorios' , () =>{
-        cy.get('.gap-3 > .flex > .inline-flex').click()
-        cy.get('#identifier-field')
-        cy.get('.cl-formButtonPrimary').click()
-        cy.get('.cl-formFieldErrorText')
-        
-     })
+    
+    
 
 })

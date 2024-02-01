@@ -1,0 +1,42 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "airbnb-base",
+        "plugin:vue/vue3-essential"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+        
+    },
+    "plugins": [
+        "vue"
+    ],
+    "rules": {
+        "indent":[
+           "error",
+           2 
+        ],
+        "linebreak-style":[
+            "error",
+            "unix"
+        ],
+        "quotes":[
+            "error",
+            "single"
+        ],
+        "semi":[
+            "error",
+            "never"
+        ],
+        "no-trailing-spaces":[
+            "error"
+        ],
+        "typeof": true
+    }
+}
