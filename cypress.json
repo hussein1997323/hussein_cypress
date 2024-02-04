@@ -1,0 +1,8 @@
+{
+    "baseUrl": "https://platform.zaia.app/auth/login",
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "testFiles": "**/*.spec.js",
+    "defaultCommandTimeout": 5000
+  }
+  
